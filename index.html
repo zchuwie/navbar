@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+                <img src="./img/close_111152 (1).png" class="close-icon" onclick="closemenu()">
+            </nav>
+            <img src="./img/icons8-menu-rounded-50.png" class="open-icon" onclick="openmenu()">
+        </div>
+    </div>
+
+<script>
+    var menu = document.getElementById("menu")
+
+    function closemenu(){
+        menu.style.top = "-100vh";
+    }
+    function openmenu(){
+        menu.style.top = "0";
+    }
+</script>
+
+</body>
+</html>
